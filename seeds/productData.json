@@ -1,0 +1,62 @@
+[
+    {
+      "product_name": "Canon EOS R5 Mirrorless Camera",
+      "price": 3899.00,
+      "stock": 14,
+      "category_id": 1
+    },
+    {
+      "product_name": "Canon EOS 5D MarkIV DSLR Camera",
+      "price": 2699.00,
+      "stock": 25,
+      "category_id": 1
+    },
+    {
+      "product_name": "Canon EF 70-200mm f/2.8L IS III USM Lens",
+      "price": 2099.00,
+      "stock": 12,
+      "category_id": 2
+    },
+    {
+      "product_name": "Canon RF 70-200mm f/2.8L IS USM Lens",
+      "price": 2799.00,
+      "stock": 50,
+      "category_id": 2
+    },
+    {
+      "product_name": "Profoto B10 OCF Flash Head",
+      "price": 1795.00,
+      "stock": 22,
+      "category_id": 3
+    },
+    {
+        "product_name": "Profoto A10 AirTTL-C Studio Light for Canon",
+        "price": 1095.00,
+        "stock": 50,
+        "category_id": 3
+      },
+      {
+        "product_name": "Really Right Stuff TFC-14 MK2 Series1 Ultralight Carbon Fiber Tripod (47.2in)",
+        "price": 835.00,
+        "stock": 50,
+        "category_id": 4
+      },
+      {
+        "product_name": "Really Right Stuff TFC-24L MK2 Series2 Long-Leg Ultralight Carbon Fiber Tripod (66.1in)",
+        "price": 985.00,
+        "stock": 50,
+        "category_id": 4
+      },
+      {
+        "product_name": "Canon BR-E1 Wireless Remote Control",
+        "price": 44.95,
+        "stock": 10,
+        "category_id": 5
+      },
+      {
+        "product_name": "BlackRapid Sport Breathe Camera Strap",
+        "price": 77.95,
+        "stock": 25,
+        "category_id": 5
+      }
+  ]
