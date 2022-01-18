@@ -8,7 +8,7 @@ router.post('/', async (req, res) => {
       ...req.body,
     });
 
-    res.status(200).json(newPost);
+    res.status(200).json(newProduct);
   } catch (err) {
     res.status(400).json(err);
   }
@@ -42,7 +42,7 @@ router.delete('/:id', async (req, res) => {
       },
     });
 
-    if (!postData) {
+    if (!productData) {
       res.status(404).json({ message: 'No product found with this id!' });
       return;
     }
