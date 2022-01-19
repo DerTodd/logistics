@@ -2,6 +2,7 @@ const path = require('path');
 const express = require('express');
 //const session = require('express-session');
 const exphbs = require('express-handlebars');
+const objectToCsv = require('objects-to-csv')
 //const SequelizeStore = require('connect-session-sequelize')(session.Store);
 
 const routes = require('./controllers');
@@ -29,12 +30,19 @@ const PORT = process.env.PORT || 3001;
 // sess.store.sync();
 
 const hbs = exphbs.create({ helpers });
+const db = require("./models");
+const initRoutes = require("./routes/products-routes");
+
+app.use(express.urlencoded({ extended: true }));
+initRoutes(app);
+
+//db.sequelize.sync();
+
 
 app.engine('handlebars', hbs.engine);
 app.set('view engine', 'handlebars');
 
 app.use(express.json());
-app.use(express.urlencoded({ extended: true }));
 
 app.use(express.static(path.join(__dirname, 'public')));
 
