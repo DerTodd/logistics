@@ -54,7 +54,7 @@ console.log(data)
 
     const createCsv = async (event) => {
         event.preventDefault();
-        alert("working")
+        alert("Downloading Your Inventory.csv File")
         console.log("_____");
         document.location.replace('/api/csv/download')
     };
