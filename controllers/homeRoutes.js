@@ -17,6 +17,22 @@ router.get("/", async (req, res) => {
   }
 });
 
+router.get("/dashboard", async (req, res) => {
+    try {
+      const productData = await Product.findAll({
+          include: [{ model: Category }],
+      });
+  
+      const products = productData.map((post) => post.get({ plain: true }));
+      console.log(products);
+      res.render("dashboard", {
+        products: products,
+      });
+    } catch (err) {
+      res.status(500).json(err);
+    }
+  });
+
 
 router.get('/product/:id', async (req, res) => {
     try {
