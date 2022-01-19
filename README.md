@@ -1,3 +1,69 @@
+  # Logistics Backend
+
+  ## Table of Contents
+  * [Description](#descrip)
+  * [Installation](#install)
+  * [Usage](#usage)
+  * [Contributions](#contri)
+  * [Tests](#tests)
+  * [Contact & Qustions](#contact)
+  * [License](#license)
+  * [Powered By](#powered-by)
+  <a name='descrip'></a>
+  ### Description:
+      Create an inventory tracking system for a company.  Users should be able to Add, View, Update, and Delete inventory items.  The User will also be able to download a CSV with a single click.
+
+  <a name='install'></a>
+  ### Installation:
+      To make review as easy as possible, it is available for use at the website https://cameralogisticsbackend.herokuapp.com/
+
+  <a name='usage'></a>
+  ### Usage: 
+      Track inventory with a mySQL database
+      Navigate to the website and you will be presented with all the inventory in the system.
+
+![Main Page](./assets/images/Main.jpg)
+
+      Once you are on this page, you can create a nwe item by clicking on the "Add A Product" Naviagtion bar.
+      You will be presented with a form that is easy to complete.
+
+![Create A New Item](./assets/images/Create.jpg)
+
+      If there are any changes that need to be made to a produce, a user can simply click on the name of the product.  This will take you to a page that allows the item to be edited or deleted.
+
+![Edit Inventroy](./assets/images/Edit.jpg)
+
+      If the user needs a file to view, there is the option to download a .csv.  The user will simply click the button at the bottom of the page to generate the report.
+
+![Generate CSV](./assets/images/Export.jpg)
+
+  <a name='contri'></a>
+  ### Contributions:
+      
+
+  <a name='tests'></a>
+  ### Tests
+      
+
+  <a name='contact'></a>
+  ### Contact & Qustions
+  If you have any questions, suggestions or concerns, please contact me at:  
+  GitHub  
+  https://github.com/DerTodd  
+  email  
+      todd.taylor@utexas.edu  
+
+  <a name='licnese'></a>
+  ### License:
+  [MIT](https://opensource.org/licenses/MIT)
+
+  <a name='powered-by'></a>
+  #### Powered By
+  ![Monster](./assets/images/monster.jpg)  
+  ![Coke](./assets/images/coke.jpg)  
+  ![Alani Nu](./assets/images/alani_nu.jpg) 
+
+
 # logistics
 TASK: Build an inventory tracking web application for a logistics company. We are looking for a web application that meets the requirements listed below, along with one additional feature, with the options also listed below. 
 
