@@ -25,7 +25,7 @@ router.post('/edit/:id', async (req, res) => {
         category_id: req.body.category_id
     },
 
-    { where: { id: req.body.id } }
+    { where: { id: req.params.id } }
     );
 
     res.status(200).json(updateProduct);

@@ -4,7 +4,7 @@ const { Category, Product } = require("../models");
 router.get("/", async (req, res) => {
   try {
     const productData = await Product.findAll({
-      include: Category,
+        include: [{ model: Category }],
     });
 
     const products = productData.map((post) => post.get({ plain: true }));
@@ -37,3 +37,23 @@ router.get('/product/:id', async (req, res) => {
       res.status(500).json(err);
     }
   });
+
+  router.get('/edit/:id', async (req, res) => {
+    try {
+      const productData = await Product.findByPk(req.params.id, {
+        include: [
+          Category,
+          
+        ]
+      });
+      const product = productData.get({ plain: true });
+    console.log(product)
+    res.render('edit', {
+      ...product,
+    });
+  } catch (err) {
+    res.status(500).json(err);
+  }
+});
+
+  module.exports = router;
